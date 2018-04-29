@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Big Skinny</title>
+    <title id="Top">Big Skinny</title>
 
     <!-- Remote Linked Files -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
@@ -16,7 +16,37 @@
     <!-- Local Linked Files -->
     <link type="text/css" rel="stylesheet" href="css/styles.css"/>
 
-      <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
       <!--<script>
           document.getElementById("nav-toggle").addEventListener ("click", toggleNav);
           function toggleNav() {
@@ -36,7 +66,7 @@
   <nav class="navbar has-text-black">
       <div class="navbar-brand">
           <a class="navbar-item has-text-black" href="index.html">
-              <h4 class="title is-4"><strong>BIG</strong> skinny</h4>
+              <h4 class="title is-4"><strong style="font-weight: bold">BIG</strong> skinny</h4>
           </a>
 
           <div class="navbar-burger burger" data-target="navMenubd-example">
@@ -48,38 +78,9 @@
 
       <div id="navMenubd-example" class="navbar-menu has-text-black">
           <div class="navbar-start">
-              <!--<div class="navbar-item has-dropdown is-hoverable">-->
-                  <!--<a class="navbar-link  is-active" href="/documentation/overview/start/">-->
-                      <!--Docss-->
-                  <!--</a>-->
-                  <!--<div class="navbar-dropdown ">-->
-                      <!--<a class="navbar-item " href="/documentation/overview/start/">-->
-                          <!--Overview-->
-                      <!--</a>-->
-                      <!--<a class="navbar-item " href="http://bulma.io/documentation/modifiers/syntax/">-->
-                          <!--Modifiers-->
-                      <!--</a>-->
 
-                      <!--<a class="navbar-item is-active" href="http://bulma.io/documentation/components/breadcrumb/">-->
-                          <!--Components-->
-                      <!--</a>-->
-
-                      <!--<hr class="navbar-divider">-->
-                      <!--<div class="navbar-item"></div>-->
-                  <!--</div>-->
-              <!--</div>-->
               <div class="navbar-item has-dropdown is-hoverable is-mega">
 
-                  <!--<div id="blogDropdown" class="navbar-dropdown " data-style="width: 18rem;">
-                      <div class="container is-fluid"></div>
-
-                      <hr class="navbar-divider">
-                      <div class="navbar-item">
-                          <div class="navbar-content">
-
-                          </div>
-                      </div>
-                  </div>-->
               </div>
               <div class="navbar-item has-dropdown is-hoverable">
 
@@ -124,28 +125,24 @@
               <a href="men.html">
               <article class="tile is-child box">
                 <p class="title">Men</p>
-                <p class="subtitle">Subtitle</p>
                 <div class="content">
-
                   <img src="images/men.jpg" alt="">
-                  <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo sit amet vehicula eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p>
-
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo sit amet vehicula eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p>
-
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo sit amet vehicula eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p> -->
                 </div>
               </article>
               </a>
             </div>
-            <div class="tile is-8 is-vertical">
+            <div class="tile is-4 is-vertical">
               <div class="tile">
+
                 <div class="tile is-parent">
+
                   <article class="tile is-child box">
+                    <a href="women.html">
                     <p class="title">Women</p>
-                    <p class="subtitle">Subtitle</p>
                     <figure class="image is-3by2">
                       <img src="images/fixedwomen.png">
                     </figure>
+                  </a>
                   </article>
                 </div>
                 <!-- <div class="tile is-parent">
@@ -155,26 +152,32 @@
                   </article>
                 </div> -->
               </div>
-              <div class="tile is-parent">
-                <article class="tile is-child box">
-                  <p class="title">Sale</p>
-                  <p class="subtitle">Subtitle</p>
-                  <figure class="image is-3by2">
-                    <img src="images/fixedsale.png">
-                  </figure>
-                  <!-- <img src="images/water.jpg" alt=""> -->
-                </article>
-              </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <a href="sale.html">
+                        <p class="title">Sale</p>
+                        <figure class="image is-5by4">
+                            <img src="images/fixedsale.png">
+                        </figure>
+                        </a>
+                        <!-- <img src="images/water.jpg" alt=""> -->
+                    </article>
+                </div>
             </div>
           </div>
         </div>
       </div>
         <div class="tile is-ancestor">
+
+        </div>
+        <div class="tile is-ancestor">
           <div class="tile is-parent">
             <article class="tile is-child box">
               <p class="title">Card Cases</p>
-              <p class="subtitle">Subtitle</p>
-              <img src="images/card case.jpg" alt="">
+                <figure class="image is-3by2">
+                    <img src="images/card case.jpg" alt="">
+                </figure>
+
             </article>
           </div>
         </div>
@@ -206,15 +209,38 @@
       </div>
     </div> -->
 
-    <footer class="footer">
-      <div class="container is-fullhd">
-        <div class="content has-text-centered">
-          <p>
-            We <strong>love</strong> <a href="http:anish-krishnan.github.io">Anish Krishnan</a>. hehehehehehh
-          </p>
-        </div>
-      </div>
-    </footer>
+    <section style="width:100%">
+      <br>
+        <footer class="footer is-fullhd">
+          <div class="container is-fullhd">
+            <div class="content has-text-centered">
+              <div style="float: left;">
+                <p>
+                  <a href="index.html" style="color: black;"> &copy; 2018 <strong>BIG</strong> skinny </a>
+                </p>
+              </div>
+              <div style="float: right">
+                <a href="https://www.instagram.com/bigskinny_wallets/?hl=en" style="color: black;"><i class="fab fa-instagram"></i></a>
+                &nbsp; &nbsp;
+                <a href="https://twitter.com/big_skinny" style="color: black;"><i class="fab fa-twitter"></i></a>
+                &nbsp; &nbsp;
+                <a href="https://www.facebook.com/bigskinny/" style="color: black;"><i class="fab fa-facebook"></i></a>
+                &nbsp; &nbsp; &nbsp;
+                | &nbsp; &nbsp; &nbsp;<a href="#Top"><i class="fas fa-arrow-up" style="color: black"></i></a>
+              </div>
+
+              <div class="flex-grid-thirds is-hidden-mobile" >
+                <div class="col"><a href="gallery.html" style="color: black;">Gallery</a></div>
+                <div class="col"><a href="products.html" style="color: black;">Products</a></div>
+                <div class="col"><a href="locations.html" style="color: black;">Locations</a></div>
+                <div class="col"><a href="team.html" style="color: black;">Meet the Team</a></div>
+              </div>
+
+
+            </div>
+          </div>
+        </footer>
+    </section>
 
   </body>
 </html>

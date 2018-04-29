@@ -1,0 +1,36 @@
+.navbar-item {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.footer{
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+}
+
+
+#our-wallets .hero-body {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+
+}
+
+.has-bg-img {
+    background: url("/images/thin2.jpg")
+    center center;
+    background-size:cover;
+}
+
+#thin-text {
+    position: absolute;
+    top: 2%;
+    left: 30%;
+    transform: translate(-36%,0%);
+}
+
+#thin-text2 {
+     top: 2%;
+     color: white;
+     /*left: 5%;
+     transform: translate(-5%,0%);*/
+ }

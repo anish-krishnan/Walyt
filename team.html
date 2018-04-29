@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Big Skinny</title>
+    <title id="Top">Big Skinny</title>
 
     <!-- Remote Linked Files -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
@@ -17,6 +17,38 @@
     <link type="text/css" rel="stylesheet" href="css/styles.css"/>
 
       <script type="text/javascript" src="js/scripts.js"></script>
+
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+      </script>
+
+
       <!--<script>
           document.getElementById("nav-toggle").addEventListener ("click", toggleNav);
           function toggleNav() {
@@ -36,7 +68,7 @@
   <nav class="navbar has-text-black">
       <div class="navbar-brand">
           <a class="navbar-item has-text-black" href="index.html">
-              <h4 class="title is-4"><strong>BIG</strong> skinny</h4>
+            <h4 class="title is-4"><strong style="font-weight: bold">BIG</strong> skinny</h4>
           </a>
 
           <div class="navbar-burger burger" data-target="navMenubd-example">
@@ -48,38 +80,10 @@
 
       <div id="navMenubd-example" class="navbar-menu has-text-black">
           <div class="navbar-start">
-              <!--<div class="navbar-item has-dropdown is-hoverable">-->
-                  <!--<a class="navbar-link  is-active" href="/documentation/overview/start/">-->
-                      <!--Docss-->
-                  <!--</a>-->
-                  <!--<div class="navbar-dropdown ">-->
-                      <!--<a class="navbar-item " href="/documentation/overview/start/">-->
-                          <!--Overview-->
-                      <!--</a>-->
-                      <!--<a class="navbar-item " href="http://bulma.io/documentation/modifiers/syntax/">-->
-                          <!--Modifiers-->
-                      <!--</a>-->
 
-                      <!--<a class="navbar-item is-active" href="http://bulma.io/documentation/components/breadcrumb/">-->
-                          <!--Components-->
-                      <!--</a>-->
-
-                      <!--<hr class="navbar-divider">-->
-                      <!--<div class="navbar-item"></div>-->
-                  <!--</div>-->
-              <!--</div>-->
               <div class="navbar-item has-dropdown is-hoverable is-mega">
 
-                  <!--<div id="blogDropdown" class="navbar-dropdown " data-style="width: 18rem;">
-                      <div class="container is-fluid"></div>
 
-                      <hr class="navbar-divider">
-                      <div class="navbar-item">
-                          <div class="navbar-content">
-
-                          </div>
-                      </div>
-                  </div>-->
               </div>
               <div class="navbar-item has-dropdown is-hoverable">
 
@@ -114,169 +118,80 @@
         </section>
 
         <section>
-
-          <!-- <div class="card" style="width: 40%; float: left">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48">
-                    <img src="images/anish.png" alt="Placeholder image">
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <p class="title is-4">John Smith</p>
-                  <p class="subtitle is-6">@johnsmith</p>
-                </div>
-              </div>
-
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                <a href="#">#css</a> <a href="#">#responsive</a>
-                <br>
-                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-              </div>
-            </div>
-          </div>
-
-          <div class="card" style="width: 40%; float: left">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48">
-                    <img src="images/anish.png" alt="Placeholder image">
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <p class="title is-4">John Smith</p>
-                  <p class="subtitle is-6">@johnsmith</p>
-                </div>
-              </div>
-
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                <a href="#">#css</a> <a href="#">#responsive</a>
-                <br>
-                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-              </div>
-            </div>
-          </div>
         </section>
 
-        <br> -->
-
-
-
 
         <div class="tile is-ancestor">
           <div class="tile is-parent">
-            <article class="tile is-child box">
-              <p class="title"></p>
-              <p class="subtitle"></p>
+            <article class="tile is-child box peps">
               <div class="card">
                 <div class="card-image">
-                  <figure class="image is-4by3">
-                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                  <figure class="image is-1by1">
+                    <img src="images/bios/EndiciaMohaan.jpg" alt="Placeholder image">
                   </figure>
                 </div>
                 <div class="card-content">
                   <div class="media">
-                    <div class="media-left">
+                    <!-- <div class="media-left">
                       <figure class="image is-48x48">
                         <img src="images/anish.png" alt="Placeholder image">
                       </figure>
-                    </div>
+                    </div> -->
                     <div class="media-content">
-                      <p class="title is-4">John Smith</p>
-                      <p class="subtitle is-6">@johnsmith</p>
+                      <p class="title is-4">Endicia Mohaan</p>
                     </div>
                   </div>
 
                   <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                    <a href="#">#css</a> <a href="#">#responsive</a>
-                    <br>
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    Endicia Mohaan answers phones, goes on Dunkin Donuts runs, packs thin wallets, disentangles quadratic equations, speaks in iambic pentameter, and serves as Big Skinny Wallet Jester-in-residence. Her inflated sense of humor makes everyone laugh. i am so pretty
                   </div>
                 </div>
               </div>
             </article>
           </div>
           <div class="tile is-parent">
-            <article class="tile is-child box">
-              <p class="title"></p>
-              <p class="subtitle"></p>
+            <article class="tile is-child box peps">
               <div class="card">
                 <div class="card-image">
-                  <figure class="image is-4by3">
-                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                  <figure class="image is-1by1">
+                    <img src="images/bios/PRAGUE.jpg" alt="Placeholder image">
                   </figure>
                 </div>
                 <div class="card-content">
                   <div class="media">
-                    <div class="media-left">
-                      <figure class="image is-48x48">
-                        <img src="images/anish.png" alt="Placeholder image">
-                      </figure>
-                    </div>
+
                     <div class="media-content">
-                      <p class="title is-4">John Smith</p>
-                      <p class="subtitle is-6">@johnsmith</p>
+                      <p class="title is-4">Prague Kalaivanan</p>
                     </div>
                   </div>
 
                   <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                    <a href="#">#css</a> <a href="#">#responsive</a>
-                    <br>
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    Prague Kalaivanan is our online marketing and social media director. He keeps us older folks up to date on new social media trends, updates our Instagram, Facebook, etc, and manages our marketing campaigns.  I am the best online marketer there is.  No one rivals me in any way shape
                   </div>
                 </div>
               </div>
             </article>
           </div>
           <div class="tile is-parent">
-            <article class="tile is-child box">
+            <article class="tile is-child box peps">
               <p class="title"></p>
               <p class="subtitle"></p>
               <div class="card">
                 <div class="card-image">
-                  <figure class="image is-4by3">
-                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                  <figure class="image is-1by1">
+                    <img src="images/bios/Lianne.jpg" alt="Placeholder image">
                   </figure>
                 </div>
                 <div class="card-content">
                   <div class="media">
-                    <div class="media-left">
-                      <figure class="image is-48x48">
-                        <img src="images/anish.png" alt="Placeholder image">
-                      </figure>
-                    </div>
+
                     <div class="media-content">
-                      <p class="title is-4">John Smith</p>
-                      <p class="subtitle is-6">@johnsmith</p>
+                      <p class="title is-4">Lianne Deal</p>
                     </div>
                   </div>
 
                   <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                    <a href="#">#css</a> <a href="#">#responsive</a>
-                    <br>
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    Lianne Deal is our Vendor Manager. She orchestrates all the technical nuances involved with running our vendor program, making sure that they have the product they need, shows are listed, and everything is running smoothly.  I am so good at my job because i am good
                   </div>
                 </div>
               </div>
@@ -286,34 +201,25 @@
 
         <div class="tile is-ancestor">
           <div class="tile is-parent">
-            <article class="tile is-child box">
+            <article class="tile is-child box peps">
               <p class="title"></p>
               <p class="subtitle"></p>
               <div class="card">
                 <div class="card-image">
-                  <figure class="image is-4by3">
-                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                  <figure class="image is-1by1">
+                    <img src="images/bios/mcbride.jpg" alt="Placeholder image">
                   </figure>
                 </div>
                 <div class="card-content">
                   <div class="media">
-                    <div class="media-left">
-                      <figure class="image is-48x48">
-                        <img src="images/anish.png" alt="Placeholder image">
-                      </figure>
-                    </div>
+
                     <div class="media-content">
-                      <p class="title is-4">John Smith</p>
-                      <p class="subtitle is-6">@johnsmith</p>
+                      <p class="title is-4">Stephanie McBride</p>
                     </div>
                   </div>
 
                   <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                    <a href="#">#css</a> <a href="#">#responsive</a>
-                    <br>
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    Stephaine McBridge is our in-house Amazon expert and Wholesale Manager, tackles the nitty gritty and ever-changing world of Amazon, making sure product arrives on time, customers are happy, and things flow smoothly. She fares from the commonwealth of Virginia.
                   </div>
                 </div>
               </div>
@@ -321,34 +227,25 @@
           </div>
 
           <div class="tile is-parent">
-            <article class="tile is-child box">
+            <article class="tile is-child box peps">
               <p class="title"></p>
               <p class="subtitle"></p>
               <div class="card">
                 <div class="card-image">
-                  <figure class="image is-4by3">
-                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                  <figure class="image is-1by1">
+                    <img src="images/bios/cathandkiril2.jpg" alt="Placeholder image">
                   </figure>
                 </div>
                 <div class="card-content">
                   <div class="media">
-                    <div class="media-left">
-                      <figure class="image is-48x48">
-                        <img src="images/anish.png" alt="Placeholder image">
-                      </figure>
-                    </div>
+
                     <div class="media-content">
-                      <p class="title is-4">John Smith</p>
-                      <p class="subtitle is-6">@johnsmith</p>
+                      <p class="title is-4">Kiril Alexandrov</p>
                     </div>
                   </div>
 
                   <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                    <a href="#">#css</a> <a href="#">#responsive</a>
-                    <br>
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    Kiril Alexandrov created one basic model [the Sport Wallet] in 2005. Dozens of wallet styles have since been added and more are on the way. Kiril’s entrepreneurial background includes founding multiple businesses in the Boston area.
                   </div>
                 </div>
               </div>
@@ -357,34 +254,25 @@
 
 
           <div class="tile is-parent">
-            <article class="tile is-child box">
+            <article class="tile is-child box peps">
               <p class="title"></p>
               <p class="subtitle"></p>
               <div class="card">
                 <div class="card-image">
-                  <figure class="image is-4by3">
-                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                  <figure class="image is-1by1">
+                    <img src="images/bios/cathandkiril1.jpg" alt="Placeholder image">
                   </figure>
                 </div>
                 <div class="card-content">
                   <div class="media">
-                    <div class="media-left">
-                      <figure class="image is-48x48">
-                        <img src="images/anish.png" alt="Placeholder image">
-                      </figure>
-                    </div>
+
                     <div class="media-content">
-                      <p class="title is-4">John Smith</p>
-                      <p class="subtitle is-6">@johnsmith</p>
+                      <p class="title is-4">Catherine Alexandrov</p>
                     </div>
                   </div>
 
                   <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                    <a href="#">#css</a> <a href="#">#responsive</a>
-                    <br>
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    Catherine Alexandrov is COO, which really means, when you're running a very small business, cat-of-all-trades; from operations, to updating the website, general management, to fun stuff like inventory analysis, she adds a caffeinated boost to the wallet business [and dry humor to the website, eh?].
                   </div>
                 </div>
               </div>
@@ -392,7 +280,7 @@
           </div>
 
         </div>
-
+</div>
 
 
 
@@ -408,16 +296,38 @@
           </div>
       </div>
     </div> -->
-
-    <footer class="footer">
+<section style="width:100%">
+  <br>
+    <footer class="footer is-fullhd">
       <div class="container is-fullhd">
         <div class="content has-text-centered">
-          <p>
-            We <strong>love</strong> <a href="http:anish-krishnan.github.io">Dillan Gajarawala</a>. hehehehehehh
-          </p>
+          <div style="float: left;">
+            <p>
+              <a href="index.html" style="color: black;"> &copy; 2018 <strong>BIG</strong> skinny </a>
+            </p>
+          </div>
+          <div style="float: right">
+            <a href="https://www.instagram.com/bigskinny_wallets/?hl=en" style="color: black;"><i class="fab fa-instagram"></i></a>
+            &nbsp; &nbsp;
+            <a href="https://twitter.com/big_skinny" style="color: black;"><i class="fab fa-twitter"></i></a>
+            &nbsp; &nbsp;
+            <a href="https://www.facebook.com/bigskinny/" style="color: black;"><i class="fab fa-facebook"></i></a>
+            &nbsp; &nbsp; &nbsp;
+            | &nbsp; &nbsp; &nbsp;<a href="#Top"><i class="fas fa-arrow-up" style="color: black"></i></a>
+          </div>
+
+          <div class="flex-grid-thirds is-hidden-mobile" >
+            <div class="col"><a href="gallery.html" style="color: black;">Gallery</a></div>
+            <div class="col"><a href="products.html" style="color: black;">Products</a></div>
+            <div class="col"><a href="locations.html" style="color: black;">Locations</a></div>
+            <div class="col"><a href="team.html" style="color: black;">Meet the Team</a></div>
+          </div>
+
+
         </div>
       </div>
     </footer>
+</section>
 
   </body>
 </html>

@@ -2,3 +2,85 @@
     margin-right: 25px;
     margin-left: 25px;
 }
+
+.footer{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+#our-wallets .hero-body {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+
+}
+.title{
+    font-weight: normal;
+}
+
+.has-bg-img {
+    background: url("/images/thin2.jpg")
+    center center;
+    background-size:cover;
+}
+
+#thin-text {
+    position: absolute;
+    top: 2%;
+    left: 30%;
+    transform: translate(-36%,0%);
+}
+
+#thin-text2 {
+     position: absolute;
+     top: 25%;
+     color: white;
+     left: 60%;
+     transform: translate(-50%,0%);
+ }
+
+ .flex-grid {
+   display: flex;
+ }
+ .flex-grid .col {
+   flex: 1;
+ }
+ .flex-grid-thirds {
+   display: flex;
+   justify-content: space-between;
+ }
+ .flex-grid-thirds .col {
+   width: 32%;
+ }
+
+ @media (max-width: 400px) {
+   .flex-grid,
+   .flex-grid-thirds {
+     display: block;}
+     .col {
+         width: 100%;
+         margin: 0 0 10px 0;
+     }
+     #boldpls {
+         font-size: 1rem;
+     }
+ }
+
+#boldpls {
+    font-weight: bold;
+    color: #ebebeb;
+}
+
+.top-left {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+
+}
+
+.peps {
+    padding: 0;
+}
+
+ 
+
