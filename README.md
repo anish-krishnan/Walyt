@@ -2,7 +2,7 @@
 
 ## An innovative design approach to **Big** Skinny's website.
 
-### Webpage: http://anish-krishnan.github.io
+### Webpage: http://anish-krishnan.github.io/Walyt
 
 ### Contact:
 Anish Krishnan: agkrishn@andrew.cmu.edu
