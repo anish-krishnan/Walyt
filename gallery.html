@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title id="Top">Our Locations</title>
-
+    <title id="Top">Gallery</title>
     <link rel="stylesheet" type="text/css" href="bulma-0.7.0/css/bulma.css" />
     <link rel="stylesheet" type="text/css" href="bulma-0.7.0/css/bulma.min.css" />
 
     <!-- Local Linked Files -->
+    <link type="text/css" rel="stylesheet" href="bulma-carousel-master/dist/bulma-carousel.min.css"/>
+
     <link type="text/css" rel="stylesheet" href="css/styles.css"/>
 
+    <script type="text/javascript" src="bulma-carousel-master/dist/bulma-carousel.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -42,8 +45,6 @@
     </script>
 </head>
 <body>
-
-<!--NAV BAR-->
 <nav class="navbar has-text-black">
     <div class="navbar-brand">
         <a class="navbar-item has-text-black" href="index.html">
@@ -71,9 +72,38 @@
         </div>
     </div>
 </nav>
-<div>
-    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1lba7vcV12GeRc91vzmrl161XxEttQ7jX" width="100%" height="665rem"></iframe>
+
+<div class='carousel carousel-animated carousel-animate-slide'>
+    <div class='carousel-container'>
+        <div class='carousel-item has-background is-active'>
+            <img class="is-background" src="images/nature wallet.jpg" alt="" width="640" height="310" />
+            <div class="title">Nature Wallet</div>
+        </div>
+        <div class='carousel-item has-background'>
+            <img class="is-background" src="images/coinWallet.jpg" alt="" width="640" height="310" />
+            <div class="title">Wallet with a lot of coins!</div>
+        </div>
+        <div class='carousel-item has-background'>
+            <img class="is-background" src="images/wallet-3200395_1920.jpg" alt="" width="640" height="310" />
+            <div class="title">Artsy wallet on a table</div>
+        </div>
+        <div class='carousel-item has-background'>
+            <img class="is-background" src="images/women.jpg" alt="" width="640" height="310" />
+            <div class="title">Women's Wallet</div>
+        </div>
+    </div>
+    <div class="carousel-navigation is-overlay">
+        <div class="carousel-nav-left">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        </div>
+        <div class="carousel-nav-right">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </div>
+    </div>
+
 </div>
+
+
 
 <section style="width:100%">
     <footer class="footer is-fullhd">
@@ -81,7 +111,7 @@
             <div class="content has-text-centered">
                 <div style="float: left;">
                     <p>
-                        <a href="index.html" style="color: black;"> &copy; 2018 <strong>BIG</strong> skinny </a>
+                        <a href="index.html" style="color: black;"> &copy;2018 <strong>BIG</strong> skinny </a>
                     </p>
                 </div>
                 <div style="float: right">
@@ -106,7 +136,5 @@
         </div>
     </footer>
 </section>
-
-
 </body>
 </html>

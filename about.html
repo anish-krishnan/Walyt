@@ -20,6 +20,8 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
     $(document).ready(function(){
@@ -44,6 +46,75 @@
             window.location.hash = hash;
           });
         } // End if
+      });
+    });
+    </script>
+
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+    <script type="text/javascript">
+    $(function () {
+      $('#container-graph').highcharts({
+        chart: {
+          type: 'bar'
+        },
+        title: {
+          text: 'High Scores on "How Well Do You Know Us?" Quiz'
+        },
+
+        subtitle: {
+          text: ''
+        },
+
+        xAxis: {
+        categories: ['Albert', 'Sarah', 'Jesse', 'Ben', 'Sophie'],
+        title: {
+            text: null
+        }
+    },
+        yAxis: {
+        min: 0,
+        title: {
+            text: 'Score (%)',
+            align: 'high'
+        },
+        labels: {
+            overflow: 'justify'
+        }
+    },
+
+        tooltip: {
+        valueSuffix: ' (%)'
+    },
+
+    legend: {
+    layout: 'vertical',
+    align: 'right',
+    verticalAlign: 'top',
+    x: -40,
+    y: 80,
+    floating: true,
+    borderWidth: 1,
+    backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+    shadow: true
+},
+
+    //     plotOptions: {
+    //     bar: {
+    //         dataLabels: {
+    //             enabled: true
+    //         }
+    //     }
+    // },
+
+    credits: {
+        enabled: false
+    },
+    series: [{
+    name: 'Scores',
+    data: [95, 88, 70, 65, 40]
+}],
       });
     });
     </script>
@@ -101,108 +172,102 @@
           <img src="images/wallet_fixed.jpg">
         </figure>
       </div>
-        <section id="our-wallets" class="hero is-medium has-text-centered">
-            <div class="hero-body">
-                <div class="container">
-                    <h4 class="title is-4">
-                        Hey guys! This is the about me page and we still have a lot
-                        of stuff to add but that should be taken care of soon!
-                        Enough of this Lorem Ipsum stuff, get some real content in here.
-                    </h4>
-                </div>
-            </div>
-        </section>
-      <div class="tile is-ancestor">
-        <div class="tile is-parent">
-          <article class="tile is-child box has-bg-img">
-            <p class="title">Thin</p>
-            <p class="subtitle"></p>
-            <!--<img src="images/thin2.jpg" alt="">-->
-          </article>
+        <div id="about-text">
+            <h2 class="title is-2" id="pls2">About Us</h2>
         </div>
-      </div>
-      <div class="tile is-ancestor">
-        <div class="tile is-vertical is-12">
-          <div class="tile">
-            <div class="tile is-parent">
-              <article class="tile is-child box">
-                <p class="title">Light</p>
-                <p class="subtitle"></p>
-                <div class="content">
+    </div>
 
-                  <img src="images/falling wallet.png" alt="">
 
-                </div>
-              </article>
-            </div>
-            <div class="tile is-8 is-vertical">
-              <div class="tile">
-                <div class="tile is-parent">
-                  <article class="tile is-child box">
-                    <p class="title">Durable</p>
-                    <p class="subtitle">Subtitle</p>
-                    <figure class="image is-3by2">
-                      <img src="images/graywallet.jpg">
-                    </figure>
-                  </article>
-                </div>
-                <!-- <div class="tile is-parent">
-                  <article class="tile is-child box">
-                    <p class="title">Seven</p>
-                    <p class="subtitle">Subtitle</p>
-                  </article>
-                </div> -->
-              </div>
-              <div class="tile is-parent">
-                <article class="tile is-child box">
-                  <p class="title">Water resistant</p>
-                  <p class="subtitle">Subtitle</p>
-                  <figure class="image is-3by2">
-                    <img src="images/water.jpg">
-                  </figure>
-                  <!-- <img src="images/water.jpg" alt=""> -->
-                </article>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-        <div class="tile is-ancestor">
-          <div class="tile is-parent">
-            <article class="tile is-child box">
-              <p class="title">Leather in Color</p>
-              <p class="subtitle">Subtitle</p>
-              <img src="images/Leatherbanner.jpg" alt="">
-            </article>
-          </div>
-        </div>
 
-        <!-- THE OLD ONES -->
-        <!-- <div class="tile is-parent">
-          <article class="tile is-child box">
-            <p class="title">One</p>
-            <p class="subtitle">Subtitle</p>
-          </article>
+    <div class="container">
+
+<p><br />
+  Big Skinny / (big skin’ e) / adj./ 1. the most thin. 2. (noun/ slang) insider information; truth, the most important fact(s) or reason(s), e.g. ''What's the Big Skinny on your hot Bulgarian supermodel friend?" Or, "Don't mess around; just give me the Big Skinny."
+<br /><br />
+Hate THICK wallets? For as long as I can remember, I've been searching for a thin wallet. I tried every advertised thin wallet and then everything else to keep my cash and cards organized together and to avoid having that uncomfortable and unsightly brick in my pocket. I felt like George Costanza with his wallet problems from the famous Seinfeld TV episode. I couldn't find anything that worked or even looked good; in reality, perhaps I was really looking for the anti-wallet.
+<br /><br />
+Finally in frustration, I designed the original thin Big Skinny sport wallet. It took almost 2 years of testing dozens of designs and over 75 natural and man-made materials searching for the right balance of "thin wallet" yet with good looks, functionality, and durability. Using an advanced version of the stylish nylon micro-fiber material (5 to 7 times thinner than leather) that made Prada famous along with the special design resulted in a slim wallet so unique that I just had to name it. Imagine a well-organized slim wallet that you barely notice yet is good-looking and can fit 20+ credit cards plus bills.
+<br /><br />
+Now using our 3rd generation of new, improved thin nylon-microfiber, our line of Big Skinny wallets are the world's thinnest wallets that are better for your back and will make you look and feel thin. We now have wallet models for men and women, a leather nylon hybrid wallet series, and also the thin sleek Super Skinny wallet which cuts your cards in half for extra thinness. Enjoy the benefits of the growing Big Skinny wallet line and, as always since founding Big Skinny in 2005, we look forward to hearing and incorporating your suggestions for improvement and new designs. We're a small company based in Harvard Square, Cambridge, MA. but we are big on responding quickly to customers. Let us know what wallet you want next--We design based on what our customers tell us!
+<br /><br />
+Sincerely,<br />
+<strong>Kiril Stefan Alexandrov</strong><br />
+<br />
+Former MIT 50K Award Winner<br />
+Former Stanford University Global Challenge Winner</p>
+<br>
+        <div id="container-graph"></div>
+    </div>
+    <br>
+    <h4 class="title is-4 has-text-centered">Take our contest quiz!</h4>
+<div class="container">
+    <div class="field">
+        <label class="label">Name</label>
+        <div class="control">
+            <input class="input" type="text" placeholder="Text input">
         </div>
-        <div class="tile is-parent">
-          <article class="tile is-child box">
-            <p class="title">One</p>
-            <p class="subtitle">Subtitle</p>
-          </article>
-        </div> -->
-      </div>
-      <!-- <div class="tile is-ancestor">
-        <div class="tile is-12 is-vertical is-parent">
-          <div class="tile is-child box">
-            <p class="title">One</p>
-            <p>Lorem ipsum .</p>
-          </div>
-          <div class="tile is-child box">
-            <p class="title">One</p>
-            <p>Lorem ipsum .</p>
-          </div>
-      </div>
-    </div> -->
+    </div>
+
+    <div class="field">
+        <label class="label">Username</label>
+        <div class="control has-icons-left has-icons-right">
+            <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+            <span class="icon is-small is-left">
+      <i class="fas fa-user"></i>
+    </span>
+            <span class="icon is-small is-right">
+      <i class="fas fa-check"></i>
+    </span>
+        </div>
+        <p class="help is-success">This username is available</p>
+    </div>
+
+    <div class="field">
+        <label class="label">Email</label>
+        <div class="control has-icons-left has-icons-right">
+            <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+            <span class="icon is-small is-left">
+      <i class="fas fa-envelope"></i>
+    </span>
+            <span class="icon is-small is-right">
+      <i class="fas fa-exclamation-triangle"></i>
+    </span>
+        </div>
+        <p class="help is-danger">This email is invalid</p>
+    </div>
+
+    <div class="field">
+        <label class="label">Are you a winner?</label>
+        <div class="control">
+            <div class="select">
+                <select>
+                    <option>Select dropdown</option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="field">
+        <div class="control">
+            <label class="checkbox">
+                <input type="checkbox">
+                I agree to the <a href="#">terms and conditions</a>
+            </label>
+        </div>
+    </div>
+
+    <div class="field is-grouped">
+        <div class="control">
+            <button class="button is-link">Submit</button>
+        </div>
+        <div class="control">
+            <button class="button is-text">Cancel</button>
+        </div>
+    </div>
+</div>
 
     <section style="width:100%">
       <br>

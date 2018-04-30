@@ -47,6 +47,15 @@
       });
     });
     </script>
+  <script>
+      $(document).ready(function(){
+          $("img").onmouseover(function(){
+              $("#imgs").fadeIn();
+              /*$("#div2").fadeIn("slow");
+              $("#div3").fadeIn(3000);*/
+          });
+      });
+  </script>
       <!--<script>
           document.getElementById("nav-toggle").addEventListener ("click", toggleNav);
           function toggleNav() {
@@ -98,9 +107,9 @@
     <div class="container">
       <div class = "container is-fullhd">
         <figure class="image">
-          <img src="images/guy2_crop.jpg">
+            <img id="imgs" class="lololol" src='images/guy2.jpg' onmouseover="this.src='images/happy.jpeg';"onmouseout="this.src='images/guy2.jpg';" />
         </figure>
-          <div class="top-left"><h2 id="boldpls" class="title is-2">Stuck in <br>black and white?</h2></div>
+          <div class="top-left"><div id="boldpls" class="title is-2" onmouseover="imgs.src='images/happy.jpeg'">Stuck in <br>black and white?</div>
       </div>
         <section id="our-wallets" class="hero is-medium has-text-centered">
             <div class="hero-body">
