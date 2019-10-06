@@ -128,14 +128,5 @@
 }
 
 #boldpls {
-  opacity: 1;
   transition: 0.5s;
-}
-
-#boldpls:hover {
-  opacity: 0;
-}
-
-#imgs:hover + #boldpls{
-  opacity: 0;
 }

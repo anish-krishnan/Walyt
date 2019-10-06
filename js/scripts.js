@@ -23,3 +23,13 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 });
+
+function loseText() {
+    var picText = document.getElementById("boldpls");
+    picText.style.opacity = 0;
+};
+
+function getText() {
+    var picText = document.getElementById("boldpls");
+    picText.style.opacity = 1;
+};
