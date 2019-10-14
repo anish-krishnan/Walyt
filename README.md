@@ -7,6 +7,9 @@
 ### Contact:
 Anish Krishnan: agkrishn@andrew.cmu.edu
 
-CJ May: cmay1@andrew.cmu.edu
+CJ May: cmay1@andrew.cmu.edu 
 
 Dillan Gajarawala: dgajaraw@andrew.cmu.edu
+
+
+Spring 2018
