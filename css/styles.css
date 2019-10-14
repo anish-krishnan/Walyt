@@ -130,3 +130,24 @@
 #boldpls {
   transition: 0.5s;
 }
+
+.poop {
+  position: relative;
+  height: 600px;
+  width: auto;
+  margin: 0 auto;
+}
+
+#figuremebb img{
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+
+#figuremebb img.top:hover{
+  opacity: 0;
+}

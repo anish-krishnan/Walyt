@@ -26,10 +26,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function loseText() {
     var picText = document.getElementById("boldpls");
+    var pic = document.getElementById("imgs");
+    pic.src = 'images/happy.jpeg';
     picText.style.opacity = 0;
+
 };
 
 function getText() {
     var picText = document.getElementById("boldpls");
+    var pic = document.getElementById("imgs");
+    pic.src = 'images/guy2.jpg';
     picText.style.opacity = 1;
 };
